@@ -13,13 +13,6 @@ plugins:
   - jekyll-seo-tag
 minima:
   date_format: "%Y年%-m月%-d日"
-header_pages:
-  - pages/about.md
-  - pages/organization.md
-  - pages/achievements.md
-  - pages/meetings.md
-  - pages/membership.md
-  - pages/inquiry.md
 # 試験公開中は検索エンジンに載せない(本番切替時に削除)
 robots_noindex: true
 exclude:

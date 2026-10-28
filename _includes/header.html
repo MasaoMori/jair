@@ -17,11 +17,20 @@
         </label>
 
         <div class="trigger">
-          {%- for path in page_paths -%}
-            {%- assign my_page = site.pages | where: "path", path | first -%}
-            {%- if my_page.title -%}
-            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-            {%- endif -%}
+          {%- for item in site.data.nav -%}
+          {%- if item.external -%}{%- assign href = item.url -%}{%- else -%}{%- assign href = item.url | relative_url -%}{%- endif -%}
+          {%- if item.children -%}
+          <div class="nav-item has-children">
+            <a class="page-link" href="{{ href }}">{{ item.title | escape }}</a>
+            <div class="submenu">
+              {%- for c in item.children -%}
+              <a class="page-link" href="{{ c.url | relative_url }}">{{ c.title | escape }}</a>
+              {%- endfor -%}
+            </div>
+          </div>
+          {%- else -%}
+          <a class="page-link"{% if item.external %} target="_blank" rel="noopener"{% endif %} href="{{ href }}">{{ item.title | escape }}</a>
+          {%- endif -%}
           {%- endfor -%}
         </div>
       </nav>

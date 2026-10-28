@@ -60,3 +60,19 @@ iframe { max-width: 100%; }
   .site-header .site-title { font-size: 16px; line-height: 1.4; display: block; padding-right: 48px; }
   .site-header .site-title img { width: 32px; height: 32px; }
 }
+
+// ドロップダウンメニュー(日本IR協会とは → 定款・組織・個人情報保護)
+.site-nav .trigger .nav-item { display: inline-block; position: relative; }
+.site-nav .trigger .nav-item > .page-link { margin-left: 0; }
+.site-nav .trigger .nav-item.has-children > .page-link::after { content: " ▾"; font-size: .8em; }
+.site-nav .submenu {
+  display: none; position: absolute; top: 100%; left: 0; z-index: 20; min-width: 12em;
+  background: $navy; border-top: 3px solid $accent; padding: 6px 0; box-shadow: 0 4px 10px rgba(0,0,0,.3);
+  .page-link { display: block; margin: 0; padding: 8px 16px; white-space: nowrap; line-height: 1.5; }
+}
+.site-nav .nav-item:hover .submenu, .site-nav .nav-item:focus-within .submenu { display: block; }
+@media screen and (max-width: 600px) {
+  .site-nav .trigger .nav-item { display: block; }
+  .site-nav .submenu { display: block; position: static; box-shadow: none; border-top: 0; padding: 0 0 0 18px; }
+  .site-nav .trigger .nav-item.has-children > .page-link::after { content: ""; }
+}

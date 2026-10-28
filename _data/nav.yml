@@ -1,0 +1,23 @@
+# 旧サイトのメニュー構成(WordPress「menu」)に合わせたナビゲーション
+- title: 日本IR協会とは
+  url: /日本ir協会とは/
+  children:
+    - title: 定款
+      url: /定款/
+    - title: 組織
+      url: /organization/
+    - title: 個人情報保護
+      url: /privacy-policy/
+- title: これまでの実績
+  url: /これまでの実績/
+- title: 研究会日程
+  url: /研究会日程/
+- title: 入会について
+  url: /会員規則/
+- title: お問い合わせ
+  url: /お問い合わせ/
+- title: コラム
+  url: https://scrapbox.io/jair/
+  external: true
+- title: サイトマップ
+  url: /サイトマップ/

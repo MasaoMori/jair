@@ -5,7 +5,7 @@ permalink: "/privacy-policy/"
 wp_id: 3
 ---
 
-私たちのサイトアドレスは {{ '/' | relative_url }} です。
+私たちのサイトアドレスは https://jairweb.jp/ です。
 
 ## 1. 本サイトで収集する個人情報について
 
