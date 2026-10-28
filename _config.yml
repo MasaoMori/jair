@@ -11,6 +11,8 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+minima:
+  date_format: "%Y年%-m月%-d日"
 header_pages:
   - pages/about.md
   - pages/organization.md

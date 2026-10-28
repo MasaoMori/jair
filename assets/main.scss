@@ -1,0 +1,62 @@
+---
+# Jekyll がこのファイルを assets/main.css にする(minima の既定を上書き)
+---
+// 旧テーマ kumle の配色に寄せる: 紺 #100e1c / アクセント赤 #fa6161 / 本文 #5f5f5f
+$base-font-family: "Barlow", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif;
+$base-font-size: 17px;
+$base-line-height: 1.8;
+$text-color: #5f5f5f;
+$brand-color: #c8383a;   // リンク色。#fa6161 は白地でコントラスト不足のため濃い赤
+$grey-color: #918f9d;
+$grey-color-light: #e4e3ea;
+$grey-color-dark: #515151;
+$content-width: 900px;
+
+@import "minima";
+
+$navy: #100e1c;
+$accent: #fa6161;
+
+.site-header {
+  background: $navy;
+  border-top: 0;
+  border-bottom: 4px solid $accent;
+  .site-title, .site-title:visited { color: #fff; font-weight: 700; letter-spacing: .02em; }
+  .site-title:hover { color: $accent; text-decoration: none; }
+  .site-nav {
+    .page-link, .page-link:visited { color: #fff; }
+    .page-link:hover { color: $accent; text-decoration: none; }
+    @media screen and (max-width: 600px) {
+      background: $navy; border-color: $navy;
+      .menu-icon > svg { fill: #fff; }
+    }
+  }
+}
+
+.page-content { padding-top: 36px; }
+.post-title, .page-heading, h1.post-title {
+  border-bottom: 3px double $grey-color;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  color: $navy;
+}
+h2, h3 { color: $navy; }
+h2 { border-left: 5px solid $accent; padding-left: 10px; margin-top: 2em; }
+a:hover { color: $accent; }
+.post-link { color: $navy; }
+.post-meta { color: $grey-color; }
+
+table { border-collapse: collapse; width: 100%; th, td { border: 1px solid $grey-color-light; padding: 6px 10px; } th { background: #f4f3f8; color: $navy; } }
+
+.site-footer {
+  background: $navy; color: #fff; border-top: 0; margin-top: 40px;
+  .footer-heading, a, a:visited { color: #fff; }
+  .contact-list, .social-media-list { color: #fff; }
+}
+img { max-width: 100%; height: auto; }
+iframe { max-width: 100%; }
+.site-header .site-title img { background: #fff; border-radius: 50%; padding: 1px; }
+@media screen and (max-width: 600px) {
+  .site-header .site-title { font-size: 16px; line-height: 1.4; display: block; padding-right: 48px; }
+  .site-header .site-title img { width: 32px; height: 32px; }
+}
