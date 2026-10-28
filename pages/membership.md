@@ -49,7 +49,7 @@ wp_id: 3561
 
 ## 入会のプロセス
 
-- 入会のお申し込みは随時、本協会ウェブサイトの入会申込（https://jairweb.jp/registration/）の入会フォームより受け付ける。
+- 入会のお申し込みは随時、本ページ上部の[入会フォーム](https://docs.google.com/forms/d/e/1FAIpQLSesanePjSZGb48iftmu2XTEwauhAeuvwqr5t9C-9RlXZ3tsNA/viewform)より受け付ける。
 - 入会申込を受付後、理事会の承認をもって会員（入会）となります。なお、正会員（個人会員）と賛助会員のプロセスは以下のとおりとなる。
 
 ### 正会員（個人）
